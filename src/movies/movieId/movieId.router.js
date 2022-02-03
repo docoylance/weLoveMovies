@@ -1,6 +1,10 @@
-const router = require("express").Router({mergeParams: true});
-const path= require("path");
-const methodNotAllowed = require(path.resolve("src", "errors", "methodNotAllowed.js"));
+const router = require("express").Router({ mergeParams: true });
+const path = require("path");
+const methodNotAllowed = require(path.resolve(
+  "src",
+  "errors",
+  "methodNotAllowed.js"
+));
 const controller = require("./movieId.controller");
 
 router.route("/").get(controller.read).all(methodNotAllowed);

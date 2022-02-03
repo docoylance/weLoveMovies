@@ -21,4 +21,4 @@ function list() {
     .then(addMovies);
 }
 
-module.exports = {list};
+module.exports = { list };

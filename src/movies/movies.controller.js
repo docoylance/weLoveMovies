@@ -6,7 +6,7 @@ async function list(req, res, next) {
   // console.log(is_showing);
   const data = is_showing ? await service.listShowing() : await service.list();
   // console.log(data);
-  res.json({data});
+  res.json({ data });
 }
 
 module.exports = {
