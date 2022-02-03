@@ -6,6 +6,7 @@ const asyncErrorBoundary = require(path.resolve(
   "asyncErrorBoundary.js"
 ));
 
+// movieId validation function
 async function movieExists(req, res, next) {
   const { movieId } = req.params;
   const movie = await service.read(movieId);
