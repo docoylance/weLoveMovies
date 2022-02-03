@@ -12,6 +12,7 @@ const errorHandler = require("./errors/errorHandler");
 app.use(cors());
 app.use(express.json());
 
+// routes
 app.use("/movies", moviesRouter);
 app.use("/reviews", reviewsRouter);
 app.use("/theaters", theatersRouter);
