@@ -16,6 +16,7 @@ app.use("/movies", moviesRouter);
 app.use("/reviews", reviewsRouter);
 app.use("/theaters", theatersRouter);
 
+// error-handlers
 app.use(notFound);
 app.use(errorHandler);
 
